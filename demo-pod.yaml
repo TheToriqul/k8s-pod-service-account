@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: demo
+  namespace: dev1
+spec:
+  serviceAccountName: demo-sa
+  containers:
+  - name: demo
+    image: nginx
+    ports:
+    - containerPort: 80
